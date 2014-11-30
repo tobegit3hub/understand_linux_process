@@ -12,3 +12,5 @@
 ## 关于勘误
 
 本文所有内容已托管到[Github](https://github.com/tobegit3hub/understand_linux_process)，如果纰漏或错误可直接发[Issue](https://github.com/tobegit3hub/understand_linux_process/issues/new)。
+
+![](img/github_screenshot.png)
