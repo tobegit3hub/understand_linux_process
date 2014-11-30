@@ -9,4 +9,5 @@
 root@87096bf68cb2:/go/src# go run hello_world.go
 Hello World
 ```
-也可以使用Docker来运行示例程序。
+
+接下来介绍使用Docker来运行示例程序。
