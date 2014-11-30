@@ -6,6 +6,7 @@
 每个例子都封装成可直接运行的Go源文件，例如Hellow World程序可以通过`go run hello_world.go`来查看运行结果。
 
 ```
-➜ go run hello_world.go
+root@87096bf68cb2:/go/src# go run hello_world.go
 Hello World
 ```
+也可以使用Docker来运行示例程序。
