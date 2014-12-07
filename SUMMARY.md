@@ -45,5 +45,5 @@
    * [项目架构](project_run/architecture.md)
    * [代码实现](project_run/implement.md)
 * [后记](reference/README.md)
-   * [相关书籍](reference/book.md)
-   * [源码学习](reference/source_code.md)
+   * [参考书籍](reference/book.md)
+   * [项目学习](reference/project.md)
