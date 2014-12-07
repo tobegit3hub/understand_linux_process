@@ -1,11 +1,11 @@
 
-## 进程ID
+## PID
 
-PID全称Process ID，是标识和区分进程的ID，对我们而言它是全局唯一的正整数。
+首先我们来学习PID这个概念，PID全称Process ID，是标识和区分进程的ID，它是一个全局唯一的正整数。
 
-Hello World进程运行时也有一个PID，只是它运行结束后PID也释放了，我们可以通过print_pid.go程序显示当前进程的PID。
+原来Hello World进程运行时也有一个PID，只是它运行结束后PID也释放了，我们可以通过print_pid.go程序显示当前进程的PID。
 
-## 输出PID
+## 示例程序
 
 程序print_pid.go的源码如下。
 
@@ -22,7 +22,7 @@ func main() {
 }
 ```
 
-两次的运行结果如下。
+## 运行结果
 
 ```
 root@87096bf68cb2:/go/src# go run print_ppid.go
@@ -31,6 +31,6 @@ root@87096bf68cb2:/go/src# go run print_ppid.go
 2932
 ```
 
-可以看出，进程运行时PID是随机分配的，同一个程序运行两个会产生两个进程，也就有两个不同的PID。
+可以看出，进程运行时PID是由操作系统随机分配的，同一个程序运行两次会产生两个进程，当然也就有两个不同的PID。
 
-PID的作用我们后面会深入地讨论，接下来探讨PPID。
+那PID究竟有什么用呢？我们稍后会讨论，现在先了解下PPID。
