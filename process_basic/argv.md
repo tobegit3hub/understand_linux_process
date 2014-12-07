@@ -31,9 +31,9 @@ func main() {
 运行效果如下。
 
 ```
-root@87096bf68cb2:/go/src# go build argument.go
-root@87096bf68cb2:/go/src# ./argument a b c d
-[./argument a b c d]
+$ go build command-line-arguments.go
+$ ./command-line-arguments a b c d
+[./command-line-arguments a b c d]
 [a b c d]
 c
 ```
@@ -85,3 +85,5 @@ Usage of ./flag:
 ```
 
 使用Go获取进程参数是很简单的，不过一旦参数太多，最佳实践还是使用配置文件。
+
+进程参数只有在启动进程时才能赋值，如果需要在程序运行时进行交互，就需要了解进程的输入与输出了。

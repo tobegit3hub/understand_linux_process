@@ -7,7 +7,7 @@
 
 ## 示例程序
 
-程序print_pid.go的源码如下。
+程序print_pid.go的源码如下，通过`Getpid()`函数可以获得当前进程的PID。
 
 ```
 package main
