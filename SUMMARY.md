@@ -31,6 +31,7 @@
    * [进程锁](process_advanced/process_lock.md)
    * [孤儿进程](process_advanced/orphan_process.md)
    * [僵尸进程](process_advanced/zombie_process.md)
+   * [守护进程](process_advanced/daemon_process.md)
    * [进程通信](process_advanced/ipc.md)
    * [管道](process_advanced/pipe.md)
    * [信号](process_advanced/signal.md)
