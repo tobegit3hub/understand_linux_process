@@ -1,0 +1,41 @@
+{
+  "output": null,
+  "generator": "site",
+  "title": "理解Linux进程",
+  "description": "理解Linux进程",
+  "extension": null,
+  "plugins": [],
+  "pluginsConfig": {
+    "fontSettings": {
+    "theme": "sepia", "night" or "white",
+    "family": "serif" or "sans",
+    "size": 1 to 4
+    }
+  },
+  "pdf": {
+    "toc": true,
+    "pageNumbers": true,
+    "fontSize": 18,
+    // Choices are [u’a0’, u’a1’, u’a2’, u’a3’, u’a4’, u’a5’, u’a6’, u’b0’, u’b1’, u’b2’, u’b3’, u’b4’, u’b5’, u’b6’, u’legal’, u’letter’]
+    "paperSize": "a4",
+    // Note: 72 pts equals 1 inch
+    "margin": {
+      "right": 36,
+      "left": 36,
+      "top": 36,
+      "bottom": 36
+    }
+  }
+  "links": {
+    "home": "https://github.com/tobegit3hub/understand_linux_process",
+    "about": "https://github.com/tobegit3hub/understand_linux_process",
+    "issues": "https://github.com/tobegit3hub/understand_linux_process/issues",
+    "edit": null,
+    "sharing": {
+      "google": null,
+      "facebook": null,
+      "twitter": null,
+      "weibo": null
+    }
+  }
+}
