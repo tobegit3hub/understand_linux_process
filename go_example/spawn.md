@@ -7,7 +7,7 @@
 
 ## 代码实现
 
-```
+```golang
 package main
 
 import "fmt"
