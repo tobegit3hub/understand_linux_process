@@ -7,7 +7,7 @@
 
 我们可以写代码模拟进程死锁的例子。
 
-```
+```golang
 package main
 
 func main() {

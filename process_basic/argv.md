@@ -11,7 +11,7 @@
 
 设计Go程序时可以轻易地获得这些参数，argument.go代码如下，代码来自<https://gobyexample.com/command-line-arguments>。
 
-```
+```golang
 package main
 
 import "os"

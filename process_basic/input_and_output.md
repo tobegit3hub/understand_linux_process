@@ -7,7 +7,7 @@
 
 来自管道(Pipe)的数据也是标准输入的一种，我们写了以下的实例来输出标注输入的数据。
 
-```
+```golang
 package main
 
 import (

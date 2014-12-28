@@ -5,7 +5,7 @@
 
 其实进程名一般都是进程参数的第一个字符串，在Go中可以这样获得进程名。
 
-```
+```golang
 package main
 
 import (

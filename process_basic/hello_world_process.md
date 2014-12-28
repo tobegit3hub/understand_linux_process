@@ -18,7 +18,7 @@ Hello World
 
 所有Go(包括任何编程语言)写的程序都会以进程的形式运行，下面是最简单的Go应用hello_world.go。
 
-```
+```golang
 package main
 
 import (

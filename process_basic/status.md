@@ -3,13 +3,23 @@
 
 根据进程的定义，我们知道进程是运行起来的代码，而一个进程可能是正在运行的，也可能是已经停止的，这就是进程的状态。
 
-进程的运行状态一般分为以下几种：
+Linux进程的共有7种状态：
 
 * 新生（new）：进程新产生中。
 * 运行（running）：正在运行。
 * 等待（waiting）：等待某事发生，例如等待用户输入完成。亦称“阻塞”（blocked）
 * 就绪（ready）：排班中，等待CPU。
 * 退出（terminated）：完成运行。
+
+
+* TASK_RUNNING
+* TASK_INTERRUPTIBLE
+* TASK_UNINTERRUPTIBLE
+* TASK_STOPPED
+* TASK_TRACED
+* TASK_DEAD-EXIT_ZOMBIE
+* TASK_DEAD-EXIT_DEAD
+
 
 其中就绪状态表示进程已经分配到除CPU以外的资源，等CPU调度它时就可以马上执行了。运行状态就是正在运行了，获得包括CPU在内的所有资源。等待状态表示因等待某个事件而没有被执行，这时候不耗CPU时间，而这个时间有可能是等待IO、申请不到足够的缓冲区或者在等待信号。
 

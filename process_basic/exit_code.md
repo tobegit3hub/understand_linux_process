@@ -7,7 +7,7 @@
 
 ## 示例程序
 
-```
+```golang
 package main
 
 func main() {
