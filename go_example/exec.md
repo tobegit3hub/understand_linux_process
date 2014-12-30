@@ -3,6 +3,8 @@
 
 这是来自GoByExample的例子，代码在<https://gobyexample.com/execing-processes>。
 
+把新程序加载到自己的内存。
+
 与Spawn不同，执行外部程序并不会返回到原进程中，也就是让外部程序完全取代本进程。
 
 ## 代码实现
