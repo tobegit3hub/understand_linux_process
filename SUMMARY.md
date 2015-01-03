@@ -30,7 +30,7 @@
    * [复制进程](go_example/fork.md)
    * [克隆进程](go_example/clone.md)
 * [进程进阶](process_advanced/README.md)
-   * [进程锁](process_advanced/process_lock.md)
+   * [文件锁](process_advanced/file_lock.md)
    * [孤儿进程](process_advanced/orphan_process.md)
    * [僵尸进程](process_advanced/zombie_process.md)
    * [守护进程](process_advanced/daemon_process.md)
