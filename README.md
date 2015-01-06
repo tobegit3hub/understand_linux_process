@@ -1,11 +1,10 @@
-
 # 理解Linux进程
 
 ## 关于这本书
 
-本书正是受[理解Unix进程](http://www.duokan.com/book/41446)启发而作，用极简的篇幅深入学习进程知识。
+本书受[*理解Unix进程*](http://www.duokan.com/book/41446)启发而作，用极简的篇幅深入学习进程知识。
 
-理解Linux进程用Go重写了所有示例程序，通过循序渐进的方法介绍Linux进程的内部工作原理和一切你所需要了解的概念。
+*理解Linux进程*用Go重写了所有示例程序，通过循序渐进的方法介绍Linux进程的工作原理和一切你所需要知道的概念。
 
 本书适合所有Linux程序员阅读。[在线阅读](http://tobegit3hub1.gitbooks.io/understanding-linux-processes/content/)，[PDF下载](https://www.gitbook.com/download/pdf/book/tobegit3hub1/understanding-linux-processes)。
 

@@ -3,6 +3,40 @@
 
 根据进程的定义，我们知道进程是运行起来的代码，而一个进程可能是正在运行的，也可能是已经停止的，这就是进程的状态。
 
+[fs/proc/array.c](https://github.com/torvalds/linux/blob/b6da0076bab5a12afb19312ffee41c95490af2a0/fs/proc/array.c)
+
+```c
+/*
+* The task state array is a strange "bitmap" of
+* reasons to sleep. Thus "running" is zero, and
+* you can test for combinations of others with
+* simple bit tests.
+*/
+static const char * const task_state_array[] = {
+  "R (running)",		/*   0 */
+  "S (sleeping)",		/*   1 */
+  "D (disk sleep)",	/*   2 */
+  "T (stopped)",		/*   4 */
+  "t (tracing stop)",	/*   8 */
+  "X (dead)",		/*  16 */
+  "Z (zombie)",		/*  32 */
+};
+```
+
+
+[include/linux/sched.h](https://github.com/torvalds/linux/blob/master/include%2Flinux%2Fsched.h)
+
+500行
+
+```c
+struct task_struct {
+  volatile long state;	/* -1 unrunnable, 0 runnable, >0 stopped */
+  void *stack;
+  atomic_t usage;
+  unsigned int flags;	/* per process flags, defined below */
+  unsigned int ptrace;
+```
+
 Linux进程的共有7种状态：
 
 * 新生（new）：进程新产生中。
