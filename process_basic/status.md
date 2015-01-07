@@ -1,9 +1,9 @@
 
 ## 进程状态
 
-根据进程的定义，我们知道进程是运行起来的代码，而一个进程可能是正在运行的，也可能是已经停止的，这就是进程的状态。
+根据进程的定义，我们知道进程是代码运行的实体，而进程有可能是正在运行的，也可能是已经停止的，这就是进程的状态。
 
-[fs/proc/array.c](https://github.com/torvalds/linux/blob/b6da0076bab5a12afb19312ffee41c95490af2a0/fs/proc/array.c)
+网上有人总结进程一共5种状态，也有总结是8种，究竟应该怎么算呢，最好的方法还是看Linux源码。进程状态的定义在[fs/proc/array.c](https://github.com/torvalds/linux/blob/b6da0076bab5a12afb19312ffee41c95490af2a0/fs/proc/array.c)文件中。
 
 ```c
 /*
@@ -23,10 +23,20 @@ static const char * const task_state_array[] = {
 };
 ```
 
+这真的是Linux的源码，可以看出进程一共7种状态，含义也比较清晰，注意其中D(disk sleep)称为不可中断睡眠状态(uninterruptible sleep)。
+
+知道进程状态本身没什么
+
+## 进程状态转换
+
+![](image/status_transform.svg)
+
+
+[使用Ptrace](https://idea.popcount.org/2012-12-11-linux-process-states/)
 
 [include/linux/sched.h](https://github.com/torvalds/linux/blob/master/include%2Flinux%2Fsched.h)
 
-500行
+
 
 ```c
 struct task_struct {
@@ -36,23 +46,6 @@ struct task_struct {
   unsigned int flags;	/* per process flags, defined below */
   unsigned int ptrace;
 ```
-
-Linux进程的共有7种状态：
-
-* 新生（new）：进程新产生中。
-* 运行（running）：正在运行。
-* 等待（waiting）：等待某事发生，例如等待用户输入完成。亦称“阻塞”（blocked）
-* 就绪（ready）：排班中，等待CPU。
-* 退出（terminated）：完成运行。
-
-
-* TASK_RUNNING
-* TASK_INTERRUPTIBLE
-* TASK_UNINTERRUPTIBLE
-* TASK_STOPPED
-* TASK_TRACED
-* TASK_DEAD-EXIT_ZOMBIE
-* TASK_DEAD-EXIT_DEAD
 
 ## 查看状态
 
