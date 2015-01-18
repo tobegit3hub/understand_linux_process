@@ -38,6 +38,7 @@
    * [管道](process_advanced/pipe.md)
    * [信号](process_advanced/signal.md)
    * [中断](process_advanced/interrupt.md)
+   * [文件描述符](process_advanced/fd.md)
    * [Epoll](process_advanced/epoll.md)
    * [Linux系统调用](process_advanced/system_call.md)
    * [Copy On Write](process_advanced/copy_on_write.md)
