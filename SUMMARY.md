@@ -34,7 +34,6 @@
    * [僵尸进程](process_advanced/zombie_process.md)
    * [守护进程](process_advanced/daemon_process.md)
    * [进程间通信](process_advanced/ipc.md)
-   * [管道](process_advanced/pipe.md)
    * [信号](process_advanced/signal.md)
    * [Linux系统调用](process_advanced/system_call.md)
    * [文件描述符](process_advanced/fd.md)
