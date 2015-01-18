@@ -11,7 +11,6 @@
 
 我们用Go实现最简单的Web服务器，代码web_server.go如下。
 
-
 ```golang
 package main
 
@@ -20,7 +19,7 @@ import (
   "net/http"
 )
 
-  func handler(w http.ResponseWriter, r *http.Request) {
+func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("Handle request")
 }
 
@@ -52,7 +51,7 @@ Saving to: 'index.html.4'
 
 ```
 ➜ go build web_server.go
-➜ ./web_server &
+➜ nohup ./web_server &
 [1] 25968
 ➜ exit
 ➜ wget 127.0.0.1:8003
