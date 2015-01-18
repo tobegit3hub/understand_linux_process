@@ -51,7 +51,7 @@ struct task_struct {
 
 通过`ps aux`可以看到进程的状态。
 
-O：进程正在处理器运行,这个状态从来木见过.
+O：进程正在处理器运行,这个状态从来没有见过.
 S：休眠状态（sleeping）
 R：等待运行（runable）R Running or runnable (on run queue) 进程处于运行或就绪状态
 I：空闲状态（idle）
