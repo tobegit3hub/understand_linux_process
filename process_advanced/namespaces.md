@@ -1,3 +1,4 @@
+
 ## Namespaces简介
 
 Linux Namespaces是资源隔离技术，在2.6.23合并到内核，而在3.12内核加入对用户空间的支持。
