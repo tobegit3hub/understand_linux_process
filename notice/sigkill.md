@@ -1,3 +1,4 @@
+
 ## 捕获SIGKILL
 
 SIGKILL是常见的Linux信号，我们使用`kill`命令杀掉进程也就是像进程发送SIGKILL信号。
