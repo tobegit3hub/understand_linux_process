@@ -56,6 +56,7 @@ func main() {
 
     fmt.Println("Mkdir /tmp/gotest/")
 }
+```
 
 ## 注意事项
 
