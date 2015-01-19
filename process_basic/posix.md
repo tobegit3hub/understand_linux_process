@@ -1,11 +1,11 @@
 
-## POXIS标准
+## POSIX标准
 
-POXIS是什么？也许你已经听过这个概念，却不能准确说出它的含义。POXIS是Portable Operating System Interface的缩写，表示可移植的操作系统接口，也就是Linux和其他Unix-like系统共同实现的API约定。
+POSIX是什么？也许你已经听过这个概念，却不能准确说出它的含义。POSIX是Portable Operating System Interface的缩写，表示可移植的操作系统接口，也就是Linux和其他Unix-like系统共同实现的API约定。
 
-## POXIS进程
+## POSIX进程
 
-POXIS定义了进程间通信的接口，包括POXIS消息。
+POSIX定义了进程间通信的接口，包括POSIX消息。
 
 |接口名称|目的|
 |-------|---|
@@ -17,7 +17,7 @@ POXIS定义了进程间通信的接口，包括POXIS消息。
 |mq_notify(3RT)|通知进程或线程消息已存在于队列中|
 |mq_setattr(3RT)、mq_getattr(3RT)|设置或获取消息队列属性|
 
-POXIS信号量。
+POSIX信号量。
 
 |信号量|目的|
 |-----|---|
@@ -39,8 +39,8 @@ POSIX共享内存是通过映射内存的变体。二者的主要差异在于：
 关闭和删除对象应使用`shm_unlink(3RT)`，而不是通过调用`close(2)`，此调用不删除对象。
 
 
-## POXIS线程
+## POSIX线程
 
-POXIS也定义了线程的标准，包括创建和控制线程的API，在Pthreads库中实现，有关线程的知识有机会再深入学习。
+POSIX也定义了线程的标准，包括创建和控制线程的API，在Pthreads库中实现，有关线程的知识有机会再深入学习。
 
-POXIS概念比较多，我们来点实际操作，探讨如果创建和运行新的进程。
+POSIX概念比较多，我们来点实际操作，探讨如果创建和运行新的进程。
