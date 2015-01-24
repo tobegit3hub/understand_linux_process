@@ -13,11 +13,10 @@ import (
   "os"
 )
 
-  func main() {
+func main() {
     processName := os.Args[0]
 
     fmt.Println(processName)
-  }
 }
 ```
 

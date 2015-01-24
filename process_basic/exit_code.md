@@ -47,7 +47,7 @@ exit status 2
 
 不管是正常退出还是异常退出，进程都结束了这个退出码有意义吗？
 
-当然有意义，我们在写Bash脚本时，可以根据前一个命令的退出码选择是否执行下一个命令。例如安装Run程序的命令`wget https://raw.githubusercontent.com/runscripts/run/packages/packages/darwin_amd64/run || sudo run --init`，只有下载脚本成功才会执行后面的安装命令。
+当然有意义，我们在写Bash脚本时，可以根据前一个命令的退出码选择是否执行下一个命令。例如安装Run程序的命令`wget https://github.com/runscripts/run-release/blob/master/0.3.6/linux_amd64/run && sudo run --init`，只有下载脚本成功才会执行后面的安装命令。
 
 [Travis CI](https://travis-ci.org/)是为开源项目提供持续集成的网站，因为测试脚本是由开发者写的，Travis只能通过测试脚本的返回值来判断这次测试是否正常通过。
 
