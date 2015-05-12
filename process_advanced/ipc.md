@@ -1,7 +1,7 @@
 
 ## 进程间通信
 
-IPC全称Interprocess Communication，指进程间协作的各种方法，当然包括共享内存，信号灯或Socket等。
+IPC全称Interprocess Communication，指进程间协作的各种方法，当然包括共享内存，信号量或Socket等。
 
 ## 管道(Pipe)
 
@@ -19,9 +19,9 @@ IPC全称Interprocess Communication，指进程间协作的各种方法，当然
 
 后面也会有更详细的介绍。
 
-## 信号灯(Semaphore)
+## 信号量(Semaphore)
 
-信号灯本质上是一个整型计数器，调用`wait`时计数减一，减到零开始阻塞进程，从而达到进程、线程间协作的作用。
+信号量本质上是一个整型计数器，调用`wait`时计数减一，减到零开始阻塞进程，从而达到进程、线程间协作的作用。
 
 ## 套接口(Socket)
 

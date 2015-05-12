@@ -25,9 +25,9 @@ func main() {
 ## 运行结果
 
 ```
-root@87096bf68cb2:/go/src# go run print_ppid.go
+root@87096bf68cb2:/go/src# go run print_pid.go
 2922
-root@87096bf68cb2:/go/src# go run print_ppid.go
+root@87096bf68cb2:/go/src# go run print_pid.go
 2932
 ```
 

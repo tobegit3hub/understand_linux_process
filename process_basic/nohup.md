@@ -1,16 +1,15 @@
 
 ## Nohup命令
 
-每个开发者都会躺过这个坑，在命令行跑一个后台程序，关闭终端后发现进程也推出了，网上搜一下发现要用`nohup`，究竟什么原因呢？
+每个开发者都会躺过这个坑，在命令行跑一个后台程序，关闭终端后发现进程也退出了，网上搜一下发现要用`nohup`，究竟什么原因呢？
 
 原来普通进程运行时默认会绑定TTY(虚拟终端)，关闭终端后系统会给上面所有进程发送TERM信号，这时普通进程也就退出了。当然还有些进程不会退出，这就是后面将会提到的守护进程。
 
-使用`nohup`的原因很简单，它能让进程脱离终端运行，关闭终端后也不会给进程发信号。
+`Nohup`的原理也很简单，终端关闭后会给此终端下的每一个进程发送SIGHUP信号，而使用`nohup`运行的进程则会忽略这个信号，因此终端关闭后进程也不会退出。
 
 ## 举个例子
 
 我们用Go实现最简单的Web服务器，代码web_server.go如下。
-
 
 ```golang
 package main
@@ -20,7 +19,7 @@ import (
   "net/http"
 )
 
-  func handler(w http.ResponseWriter, r *http.Request) {
+func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("Handle request")
 }
 
@@ -52,7 +51,7 @@ Saving to: 'index.html.4'
 
 ```
 ➜ go build web_server.go
-➜ ./web_server &
+➜ nohup ./web_server &
 [1] 25968
 ➜ exit
 ➜ wget 127.0.0.1:8003
