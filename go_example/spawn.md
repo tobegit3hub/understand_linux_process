@@ -3,7 +3,7 @@
 
 这是来自GoByExample的例子，代码在<https://gobyexample.com/spawning-processes>。
 
-它能够执行任意Go或者非Go程序，并且等待放回结果，外部进程结束后继续执行本程序。
+它能够执行任意Go或者非Go程序，并且等待返回结果，外部进程结束后继续执行本程序。
 
 ## 代码实现
 
