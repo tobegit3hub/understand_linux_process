@@ -1,7 +1,7 @@
 
 ## Docker简介
 
-![](image/docker.png)
+![](../image/docker.png)
 
 [Docker](https://github.com/docker/docker)是一个容器运行平台，你可以将程序及其依赖打包成容器，在不同机器上运行可得到一致的运行效果。因为不同的系统环境或Go版本可能影响程序的运行结果，为了得到可预测、可重复的实验环境，我们引入了Docker容器技术。
 
