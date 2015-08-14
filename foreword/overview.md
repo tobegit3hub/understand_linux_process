@@ -21,4 +21,4 @@
 
 本书所有内容都托管到[GitHub](https://github.com/tobegit3hub/understand_linux_process)，如果纰漏或错误请提[Issue](https://github.com/tobegit3hub/understand_linux_process/issues/new)。
 
-![](image/github_screenshot.png)
+![](../image/github_screenshot.png)
