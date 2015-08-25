@@ -17,7 +17,7 @@ Poll本质上是Linux系统调用，其接口为`int poll(struct pollfd *fds,nfd
 
 ## 实现
 
-这是怎么做到的呢？简单来说epoll是基于文件描述符的callback函数来实现的，只有发生IO时间的socket会调用callback函数，然后加入epoll的Ready队列。更多实现细节可以参考Linux源码，
+这是怎么做到的呢？简单来说epoll是基于文件描述符的callback函数来实现的，只有发生IO事件的socket会调用callback函数，然后加入epoll的Ready队列。更多实现细节可以参考Linux源码，
 
 ## Mmap
 
