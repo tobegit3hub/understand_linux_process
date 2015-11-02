@@ -1,7 +1,7 @@
 
 ## PID
 
-首先我们来学习PID这个概念，PID全称Process ID，是标识和区分进程的ID，它是一个全局唯一的正整数。
+首先我们来学习PID这个概念，PID全称Process ID，是标识和区分进程的ID。Linux系统保证不会同时存在两个进程拥有相同的PID，但在一个进程结束之后，其PID可能会再次被分配给新进程，参见StackOverflow上的[问题](http://unix.stackexchange.com/questions/26677/will-process-ids-be-recycled-what-if-you-reach-the-maximal-id)。
 
 原来Hello World进程运行时也有一个PID，只是它运行结束后PID也释放了，我们可以通过print_pid.go程序显示当前进程的PID。
 
