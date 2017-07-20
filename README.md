@@ -7,7 +7,7 @@
 
 *理解Linux进程*用Go重写了所有示例程序，通过循序渐进的方法介绍Linux进程的工作原理和一切你所需要知道的概念。
 
-本书适合所有Linux程序员阅读。[在线阅读](http://www.linuxprocess.com)，[PDF下载](https://github.com/tobegit3hub/understand_linux_process/blob/master/understand_linux_process.pdf?raw=true)。
+本书适合所有Linux程序员阅读。[在线阅读](https://tobegit3hub1.gitbooks.io/understanding-linux-processes/content/)，[PDF下载](https://www.gitbook.com/download/pdf/book/tobegit3hub1/understanding-linux-processes)。
 
 ## 三位好朋友
 
