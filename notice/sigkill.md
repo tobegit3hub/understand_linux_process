@@ -1,7 +1,7 @@
 
 ## 捕获SIGKILL
 
-SIGKILL是常见的Linux信号，我们使用`kill`命令杀掉进程也就是像进程发送SIGKILL信号。
+SIGKILL是常见的Linux信号，我们使用`kill`命令杀掉进程也就是向进程发送SIGKILL信号。
 
 和其他信号不同，[SIGKILL](https://en.wikipedia.org/wiki/Unix_signal#SIGKILL)和SIGSTOP是不可被Catch的，因此下面的代码是能编译通过但也是无效的，更多细节可以参考[golang/go#9463](https://github.com/golang/go/issues/9463).
 
