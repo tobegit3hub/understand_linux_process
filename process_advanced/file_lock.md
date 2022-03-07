@@ -17,7 +17,7 @@
 
 ## 使用Flock
 
-Flock提供的是advisory lock，也就是建议性的锁，其他进程实际上也可以读写这个锁文件。Linux上可以直接使用`flock`命令，使用C可以调用原生的`flock`接口，这里详细介绍Go 1.3引入的`FcntlFock()`。
+Flock提供的是advisory lock，也就是建议性的锁，其他进程实际上也可以读写这个锁文件。Linux上可以直接使用`flock`命令，使用C可以调用原生的`flock`接口，这里详细介绍Go 1.3引入的`FcntlFlock()`。
 
 我们封装了简单的接口。
 
